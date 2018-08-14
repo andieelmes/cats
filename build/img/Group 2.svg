@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="62px" viewBox="0 0 320 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M42.2253967,0 L308,0 C314.627417,-1.21743675e-15 320,5.372583 320,12 L320,50 C320,56.627417 314.627417,62 308,62 L12,62 C5.372583,62 8.11624501e-16,56.627417 0,50 L0,42.6761902 L42.4507935,0.225396744 L42.2253967,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <g id="Combined-Shape">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#1698D9" stroke-width="4" d="M2,43.5046174 L2,42.6761902 L1.41421356,44.0904038 L2,43.5046174 Z M43.5046174,2 L45.2792206,0.225396744 L43.6396103,-1.41421356 L42.2253967,0 L42.2253967,2 L43.5046174,2 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="49px" viewBox="0 0 50 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Border</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M42.2253967,0 L50,0 L50,49 L0,49 L0,42.6761902 L42.4507935,0.225396744 L42.2253967,1.42108547e-14 Z" id="path-1"></path>
+    </defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Border">
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <path stroke="#1698D9" stroke-width="4" d="M48,2 L50,2 L48,0 L48,2 Z M48,47 L48,49 L50,47 L48,47 Z M2,47 L0,47 L2,49 L2,47 Z M2,43.5046174 L2,42.6761902 L1.41421356,44.0904038 L2,43.5046174 Z M43.5046174,2 L45.2792206,0.225396744 L43.6396103,-1.41421356 L42.2253967,0 L42.2253967,2 L43.5046174,2 Z"></path>
+        </g>
+    </g>
+</svg>

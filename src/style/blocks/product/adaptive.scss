@@ -1,0 +1,34 @@
+@media(max-width:1200px) {
+  .products {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product {
+    min-width: 320px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+
+@media(max-width:768px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product {
+    min-width: 290px;
+    max-width: 320px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media(max-width:350px) {
+  .product {
+    &__inner {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+}
