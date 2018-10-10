@@ -7,7 +7,7 @@
 .product {
   color: $primary_text;
   width: 28.5%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   overflow: hidden;
   position: relative;
   height: 100%;
@@ -91,6 +91,7 @@
     line-height: 53px;
     font-weight: 700;
     padding: 7px 0 0;
+    margin: 0;
   }
   &__about {
     font-size: 24px;
@@ -138,7 +139,7 @@
     text-align: center;
     display: block;
     width: 100%;
-    padding: 14px 0;
+    padding: 14px 0 4px;
     &--selected, 
     &--disabled {
       display: none;
