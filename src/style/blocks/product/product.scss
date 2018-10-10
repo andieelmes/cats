@@ -93,6 +93,7 @@
     line-height: 19px;
     color: $primary_text_caption;
     padding-left: 2px;
+    margin: 0;
     margin-top: -36px;
   }
 
@@ -109,6 +110,7 @@
     line-height: 28px;
     font-weight: 700;
     padding-left: 2px;
+    margin: 0;
   }
 
   &__spec {
@@ -116,6 +118,7 @@
     line-height: 16px;
     color: $primary_text_caption;
     padding: 15px 2px;
+    margin: 0;
   }
 
   &__label {
