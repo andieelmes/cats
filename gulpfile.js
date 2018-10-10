@@ -22,16 +22,19 @@ var gulp = require('gulp'),
       html: 'build',
       js: 'build/js',
       css: 'build/css',
+      img: 'build/img/'
     },
     src: {
       html: 'src/**/*.jade',
       js: 'src/js/main.js',
       style: 'src/style/main.scss',
+      img: 'src/img/**/*.*'
     },
     watch: {
       html: 'src/**/*.jade',
       js: 'src/js/**/*.js',
-      style: 'src/style/**/*.scss'
+      style: 'src/style/**/*.scss',
+      img: 'src/img/**/*.*'
     }
   };
 
@@ -97,16 +100,25 @@ var gulp = require('gulp'),
     done()
   });
 
+  gulp.task('img', function (done) {
+    gulp.src(path.src.img)
+      .pipe(gulp.dest(path.build.img))
+      .pipe(reload({stream: true}));
+    done()
+  });
+
   gulp.task('build', gulp.series(
     'html:build',
     'js:build',
-    'style:build'
+    'style:build',
+    'img'
   ));
 
   gulp.task('watch', function () {
     gulp.watch([path.watch.html], gulp.series("html:build"));
     gulp.watch([path.watch.style], gulp.series("style:build"));
     gulp.watch([path.watch.js], gulp.series("js:build"));
+    gulp.watch([path.watch.img], gulp.series("img"));
   });
 
   gulp.task('webserver', function (done) {
