@@ -1,8 +1,9 @@
-@media(max-width:1200px) {
+@media (max-width: 1200px) {
   .products {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .product {
     min-width: 320px;
     margin-left: 2.5%;
@@ -10,11 +11,12 @@
   }
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .products {
     flex-direction: column;
     align-items: center;
   }
+
   .product {
     min-width: 290px;
     max-width: 320px;
@@ -24,7 +26,7 @@
   }
 }
 
-@media(max-width:350px) {
+@media (max-width: 350px) {
   .product {
     &__inner {
       padding-left: 30px;

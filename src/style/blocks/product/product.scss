@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-content: stretch;
 }
+
 .product {
   color: $primary_text;
   width: 28.5%;
@@ -12,18 +13,21 @@
   position: relative;
   height: 100%;
   min-height: 100%;
+
   &__input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   &__card {
     display: block;
     margin-top: 40px;
     border-color: $primary;
     cursor: pointer;
     height: 100%;
-    &:after {
+
+    &::after {
       display: block;
       width: calc(100% - 35px);
       height: 41px;
@@ -34,23 +38,25 @@
       border-color: inherit;
       content: "";
       position: absolute;
-      top: 0px;
-      right: 0px;
+      top: 0;
+      right: 0;
     }
-    &:before {
+
+    &::before {
       display: block;
       width: 40px;
       height: 41px;
       background-color: $primary_bg;
-      border-left: 4px solid ;
+      border-left: 4px solid;
       border-color: inherit;
       content: "";
       position: absolute;
-      top: 0px;
+      top: 0;
       left: 17px;
       transform: skewX(-41deg);
     }
   }
+
   &__inner {
     width: 100%;
     height: 100%;
@@ -64,21 +70,24 @@
     border-radius: 0 0 12px 12px;
     background-color: $primary_bg;
   }
+
   &__image {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
     margin: 0;
     width: 312px;
     height: 272px;
     overflow: hidden;
     border-radius: 0 0 0 8px;
+
     img {
       position: absolute;
       left: -4px;
       bottom: -8px;
     }
   }
+
   &__desc {
     font-size: 16px;
     line-height: 19px;
@@ -86,6 +95,7 @@
     padding-left: 2px;
     margin-top: -36px;
   }
+
   &__name {
     font-size: 48px;
     line-height: 53px;
@@ -93,18 +103,21 @@
     padding: 7px 0 0;
     margin: 0;
   }
+
   &__about {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
     padding-left: 2px;
   }
+
   &__spec {
     font-size: 14px;
     line-height: 16px;
     color: $primary_text_caption;
     padding: 15px 2px;
   }
+
   &__label {
     border-radius: 50%;
     background-color: $primary;
@@ -117,6 +130,7 @@
     bottom: 12px;
     text-align: center;
   }
+
   &__amount {
     font-size: 42px;
     line-height: 42px;
@@ -125,6 +139,7 @@
     width: 100%;
     padding-top: 10px;
   }
+
   &__unit {
     font-size: 21px;
     line-height: 18px;
@@ -132,6 +147,7 @@
     vertical-align: top;
     width: 100%;
   }
+
   &__caption {
     font-size: 13px;
     line-height: 15px;
@@ -140,14 +156,17 @@
     display: block;
     width: 100%;
     padding: 14px 0 4px;
-    &--selected, 
+
+    &--selected,
     &--disabled {
       display: none;
     }
+
     &--disabled {
       color: $disabled_contrast;
     }
   }
+
   &__action {
     color: $primary;
     cursor: pointer;
@@ -160,44 +179,54 @@
       &__card {
         border-color: $primary_hover;
       }
+
       &__action {
         color: $primary_hover;
         border-color: $primary_hover;
       }
+
       &__label {
         background-color: $primary_hover;
       }
     }
   }
-  &__input:checked ~  .product__wrapper {
+
+  &__input:checked ~ .product__wrapper {
     .product {
       &__card {
         border-color: $accent;
       }
+
       &__label {
         background-color: $accent;
       }
+
       &__caption {
         &--default {
           display: none;
         }
+
         &--selected {
           display: block;
         }
       }
+
       &__action {
         color: $accent;
         border-color: $accent;
       }
     }
+
     &:hover {
       .product {
         &__card {
           border-color: $accent_hover;
         }
+
         &__label {
           background-color: $accent_hover;
         }
+
         &__action {
           color: $accent_hover;
           border-color: $accent_hover;
@@ -205,37 +234,45 @@
       }
     }
   }
+
   &__input:disabled ~ .product__wrapper {
     .product {
       &__card {
         cursor: not-allowed;
         border-color: $disabled;
         color: $disabled;
-        &:before,
-        &:after {
+
+        &::before,
+        &::after {
           background-color: $disabled_bg;
         }
       }
-      &__about, 
-      &__name, 
-      &__desc, 
+
+      &__about,
+      &__name,
+      &__desc,
       &__spec {
         color: $disabled;
         opacity: 0.5;
       }
+
       &__inner {
         background-color: $disabled_bg;
-      } 
+      }
+
       &__label {
         background-color: $disabled;
       }
+
       &__image {
         opacity: 0.5;
       }
+
       &__caption {
         &--default {
           display: none;
         }
+
         &--disabled {
           display: block;
         }
