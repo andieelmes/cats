@@ -7,7 +7,6 @@ html
 
     meta(name='viewport', content="width=device-width, initial-scale=1")
     link(rel='stylesheet', href='./css/main.css?v=1')
-    script(src='./libs/jquery-3.2.1.min.js')
 
   body
     //- img(src="main.png" style="position:absolute;opacity:0.5;top:0;margin-left:50%;left:-640px;z-index:900;width:1280px;")
@@ -16,9 +15,9 @@ html
         .container
           h1.title Ты сегодня покормил кота?
           section.products
-            article.product
-              input(type="checkbox" id="foiegras" name="cat_food" value="foiegras").visually-hidden.product__input
-              .product__wrapper
+            article.product.js-product
+              input(type="checkbox" id="foiegras" name="cat_food" value="foiegras").visually-hidden.product__input.js-checkbox
+              .product__wrapper.js-product-card
                 label(for="foiegras").product__card
                   .product__inner
                     p.product__desc Сказочное заморское яство
@@ -38,9 +37,9 @@ html
                   label(for="foiegras").product__action купи.
                 span.product__caption.product__caption--selected Печень утки разварная с артишоками.
                 span.product__caption.product__caption--disabled Печалька, с фуа-гра закончился.
-            article.product
-              input(type="checkbox" id="fish" name="cat_food" value="fish" checked).visually-hidden.product__input
-              .product__wrapper
+            article.product.js-product
+              input(type="checkbox" id="fish" name="cat_food" value="fish" checked).visually-hidden.product__input.js-checkbox
+              .product__wrapper.js-product-card
                 label(for="fish").product__card
                   .product__inner
                     p.product__desc Сказочное заморское яство
@@ -61,9 +60,9 @@ html
                   label(for="fish").product__action купи.
                 span.product__caption.product__caption--selected Головы щучьи с чесноком да свежайшая сёмгушка.
                 span.product__caption.product__caption--disabled Печалька, с рыбой закончился.
-            article.product
-              input(type="checkbox" id="chicken" name="cat_food" value="chicken" disabled).visually-hidden.product__input
-              .product__wrapper
+            article.product.js-product
+              input(type="checkbox" id="chicken" name="cat_food" value="chicken" disabled).visually-hidden.product__input.js-checkbox
+              .product__wrapper.js-product-card
                 label(for="chicken").product__card
                   .product__inner
                     p.product__desc Сказочное заморское яство

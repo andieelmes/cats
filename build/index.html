@@ -6,7 +6,6 @@
     <title>Cats</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main.css?v=1">
-    <script src="./libs/jquery-3.2.1.min.js"></script>
   </head>
   <body>
     <div class="all">
@@ -14,9 +13,9 @@
         <div class="container">
           <h1 class="title">Ты сегодня покормил кота?</h1>
           <section class="products">
-            <article class="product">
-              <input type="checkbox" id="foiegras" name="cat_food" value="foiegras" class="visually-hidden product__input">
-              <div class="product__wrapper">
+            <article class="product js-product">
+              <input type="checkbox" id="foiegras" name="cat_food" value="foiegras" class="visually-hidden product__input js-checkbox">
+              <div class="product__wrapper js-product-card">
                 <label for="foiegras" class="product__card">
                   <div class="product__inner">
                     <p class="product__desc">Сказочное заморское яство</p>
@@ -29,9 +28,9 @@
                   <label for="foiegras" class="product__action">купи.</label></span><span class="product__caption product__caption--selected">Печень утки разварная с артишоками.</span><span class="product__caption product__caption--disabled">Печалька, с фуа-гра закончился.</span>
               </div>
             </article>
-            <article class="product">
-              <input type="checkbox" id="fish" name="cat_food" value="fish" checked class="visually-hidden product__input">
-              <div class="product__wrapper">
+            <article class="product js-product">
+              <input type="checkbox" id="fish" name="cat_food" value="fish" checked class="visually-hidden product__input js-checkbox">
+              <div class="product__wrapper js-product-card">
                 <label for="fish" class="product__card">
                   <div class="product__inner">
                     <p class="product__desc">Сказочное заморское яство</p>
@@ -44,9 +43,9 @@
                   <label for="fish" class="product__action">купи.</label></span><span class="product__caption product__caption--selected">Головы щучьи с чесноком да свежайшая сёмгушка.</span><span class="product__caption product__caption--disabled">Печалька, с рыбой закончился.</span>
               </div>
             </article>
-            <article class="product">
-              <input type="checkbox" id="chicken" name="cat_food" value="chicken" disabled class="visually-hidden product__input">
-              <div class="product__wrapper">
+            <article class="product js-product">
+              <input type="checkbox" id="chicken" name="cat_food" value="chicken" disabled class="visually-hidden product__input js-checkbox">
+              <div class="product__wrapper js-product-card">
                 <label for="chicken" class="product__card">
                   <div class="product__inner">
                     <p class="product__desc">Сказочное заморское яство</p>

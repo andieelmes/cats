@@ -217,7 +217,7 @@
       }
     }
 
-    &:hover {
+    &:not(.mouseover):hover {
       .product {
         &__card {
           border-color: $accent_hover;
