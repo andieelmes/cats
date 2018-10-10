@@ -7,13 +7,13 @@ html(lang="ru")
     meta(name='viewport', content="width=device-width, initial-scale=1")
     link(rel='stylesheet', href='./css/main.css?v=1')
   body
-    img(src="main.png" style="position:absolute;opacity:0.5;top:0;margin-left:50%;left:-640px;z-index:900;width:1280px;")
+    //- img(src="main.png" style="position:absolute;opacity:0.5;top:0;margin-left:50%;left:-640px;z-index:900;width:1280px;")
     .all
       .inner
         h1.title Ты сегодня покормил кота?
         section.products
           article.product.js-product
-            //- input(type="checkbox" id="foiegras" name="cat_food" value="foiegras").visually-hidden.product__input.js-checkbox
+            input(type="checkbox" id="foiegras" name="cat_food" value="foiegras").visually-hidden.product__input.js-checkbox
             .product__wrapper.js-product-card
               label(for="foiegras").product__card
                 .product__inner
