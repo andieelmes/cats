@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge" minimal-ui>
     <title>Cats</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32">
-    <link rel="stylesheet" href="./css/main.css?v=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/main.css?v=1">
     <script src="./libs/jquery-3.2.1.min.js"></script>
   </head>
   <body> 
@@ -15,34 +13,53 @@
       <div class="inner">
         <div class="container">
           <h1 class="title">Ты сегодня покормил кота?</h1>
-          <section class="products"><a href="#" class="product">
-              <article class="product__card">
-                <div class="product__inner">
-                  <p class="product__desc">Сказочное заморское яство</p>
-                  <h2 class="product__name">Нямушка</h2>
-                  <p class="product__about">с фуа-гра</p>
-                  <p class="product__spec"><b>10</b> порций <br>мышь в подарок</p>
-                  <figure class="product__image"><img src="img/cat.png" alt="Кот-британец" width="315px" height="272px"></figure><span class="product__label"><span class="product__amount">0,5</span><span class="product__unit">кг</span></span>
-                </div>
-              </article><span class="product__caption">Чего сидишь? Порадуй котэ, <span class="product__action">купи.</span></span><span class="product__caption product__caption--selected">Печень утки разварная с артишоками.</span><span class="product__caption product__caption--disabled">Печалька, с фуа-гра закончился.</span></a><a href="#" class="product selected">
-              <article class="product__card">
-                <div class="product__inner">
-                  <p class="product__desc">Сказочное заморское яство</p>
-                  <h2 class="product__name">Нямушка</h2>
-                  <p class="product__about">с рыбой</p>
-                  <p class="product__spec"><b>40</b> порций <br><b>2</b> мыши в подарок </p>
-                  <figure class="product__image"><img src="img/cat.png" alt="Кот-британец" width="315px" height="272px"></figure><span class="product__label"><span class="product__amount">2</span><span class="product__unit">кг</span></span>
-                </div>
-              </article><span class="product__caption">Чего сидишь? Порадуй котэ, <span class="product__action">купи.</span></span><span class="product__caption product__caption--selected">Головы щучьи с чесноком да свежайшая сёмгушка.</span><span class="product__caption product__caption--disabled">Печалька, с рыбой закончился.</span></a><a href="#" class="product disabled">
-              <article class="product__card">
-                <div class="product__inner">
-                  <p class="product__desc">Сказочное заморское яство</p>
-                  <h2 class="product__name">Нямушка</h2>
-                  <p class="product__about">с курой</p>
-                  <p class="product__spec"><b>100</b> порций <br><b>5</b> мышей в подарок <br>заказчик доволен </p>
-                  <figure class="product__image"><img src="img/cat.png" alt="Кот-британец" width="315px" height="272px"></figure><span class="product__label"><span class="product__amount">5</span><span class="product__unit">кг</span></span>
-                </div>
-              </article><span class="product__caption">Чего сидишь? Порадуй котэ, <span class="product__action">купи.</span></span><span class="product__caption product__caption--selected">Филе из цыплят с трюфелями в бульоне.</span><span class="product__caption product__caption--disabled">Печалька, с курой закончился.</span></a></section>
+          <section class="products">
+            <article class="product">
+              <input type="checkbox" id="foiegras" name="cat_food" value="foiegras" class="visually-hidden product__input">
+              <div class="product__wrapper">
+                <label for="foiegras" class="product__card">
+                  <div class="product__inner">
+                    <p class="product__desc">Сказочное заморское яство</p>
+                    <h2 class="product__name">Нямушка</h2>
+                    <p class="product__about">с фуа-гра</p>
+                    <p class="product__spec"><b>10</b> порций <br>мышь в подарок</p>
+                    <figure class="product__image"><img src="img/cat.png" alt="Кот-британец" width="315px" height="272px"></figure><span class="product__label"><span class="product__amount">0,5</span><span class="product__unit">кг</span></span>
+                  </div>
+                </label><span class="product__caption product__caption--default">Чего сидишь? Порадуй котэ, 
+                  <label for="foiegras" class="product__action">купи.</label></span><span class="product__caption product__caption--selected">Печень утки разварная с артишоками.</span><span class="product__caption product__caption--disabled">Печалька, с фуа-гра закончился.</span>
+              </div>
+            </article>
+            <article class="product">
+              <input type="checkbox" id="fish" name="cat_food" value="fish" checked class="visually-hidden product__input">
+              <div class="product__wrapper">
+                <label for="fish" class="product__card">
+                  <div class="product__inner">
+                    <p class="product__desc">Сказочное заморское яство</p>
+                    <h2 class="product__name">Нямушка</h2>
+                    <p class="product__about">с рыбой</p>
+                    <p class="product__spec"><b>40</b> порций <br><b>2</b> мыши в подарок </p>
+                    <figure class="product__image"><img src="img/cat.png" alt="Кот-британец" width="315px" height="272px"></figure><span class="product__label"><span class="product__amount">2</span><span class="product__unit">кг</span></span>
+                  </div>
+                </label><span class="product__caption product__caption--default">Чего сидишь? Порадуй котэ, 
+                  <label for="fish" class="product__action">купи.</label></span><span class="product__caption product__caption--selected">Головы щучьи с чесноком да свежайшая сёмгушка.</span><span class="product__caption product__caption--disabled">Печалька, с рыбой закончился.</span>
+              </div>
+            </article>
+            <article class="product">
+              <input type="checkbox" id="chicken" name="cat_food" value="chicken" disabled class="visually-hidden product__input">
+              <div class="product__wrapper">
+                <label for="chicken" class="product__card">
+                  <div class="product__inner">
+                    <p class="product__desc">Сказочное заморское яство</p>
+                    <h2 class="product__name">Нямушка</h2>
+                    <p class="product__about">с курой</p>
+                    <p class="product__spec"><b>100</b> порций <br><b>5</b> мышей в подарок <br>заказчик доволен </p>
+                    <figure class="product__image"><img src="img/cat.png" alt="Кот-британец" width="315px" height="272px"></figure><span class="product__label"><span class="product__amount">5</span><span class="product__unit">кг</span></span>
+                  </div>
+                </label><span class="product__caption product__caption--default">Чего сидишь? Порадуй котэ, 
+                  <label for="fish" class="product__action">купи.</label></span><span class="product__caption product__caption--selected">Филе из цыплят с трюфелями в бульоне.</span><span class="product__caption product__caption--disabled">Печалька, с курой закончился.</span>
+              </div>
+            </article>
+          </section>
         </div>
       </div>
     </div>
