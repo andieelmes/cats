@@ -21,6 +21,7 @@ html {
   min-width: 320px;
   font-family: $treb;
   background: url("../img/pattern.png") repeat, linear-gradient(-180deg, #000000 0%, rgba(0, 0, 0, 0) 50%, #000000 100%);
+  background-position: center, center;
   margin: 0 auto;
   overflow: hidden;
   min-height: 100vh;
