@@ -11,7 +11,7 @@ html(lang="ru")
     .all
       .inner
         h1.title Ты сегодня покормил кота?
-        section.products
+        form(name="cat_food" method="POST" action="#").products
           article.product.js-product
             input(type="checkbox" id="foiegras" name="cat_food" value="foiegras").visually-hidden.product__input.js-checkbox
             .product__wrapper.js-product-card
