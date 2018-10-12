@@ -22,19 +22,22 @@ var gulp = require('gulp'),
       html: 'build',
       js: 'build/js',
       css: 'build/css',
-      img: 'build/img/'
+      img: 'build/img/',
+      fonts: 'build/fonts/'
     },
     src: {
       html: 'src/**/*.jade',
       js: 'src/js/main.js',
       style: 'src/style/main.scss',
-      img: 'src/img/**/*.*'
+      img: 'src/img/**/*.*',
+      fonts: 'src/fonts/*.*'
     },
     watch: {
       html: 'src/**/*.jade',
       js: 'src/js/**/*.js',
       style: 'src/style/**/*.scss',
-      img: 'src/img/**/*.*'
+      img: 'src/img/**/*.*',
+      fonts: 'src/fonts/*.*'
     }
   };
 
@@ -107,11 +110,19 @@ var gulp = require('gulp'),
     done()
   });
 
+  gulp.task('fonts', function (done) {
+    gulp.src(path.src.fonts)
+      .pipe(gulp.dest(path.build.fonts))
+      .pipe(reload({stream: true}));
+    done()
+  });
+
   gulp.task('build', gulp.series(
     'html:build',
     'js:build',
     'style:build',
-    'img'
+    'img',
+    'fonts'
   ));
 
   gulp.task('watch', function () {
@@ -119,6 +130,7 @@ var gulp = require('gulp'),
     gulp.watch([path.watch.style], gulp.series("style:build"));
     gulp.watch([path.watch.js], gulp.series("js:build"));
     gulp.watch([path.watch.img], gulp.series("img"));
+    gulp.watch([path.watch.fonts], gulp.series("fonts"));
   });
 
   gulp.task('webserver', function (done) {
