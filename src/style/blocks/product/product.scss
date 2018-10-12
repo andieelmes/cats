@@ -23,15 +23,15 @@
 
   &__card {
     display: block;
-    margin-top: 40px;
+    margin-top: 42px;
     border-color: $primary;
     cursor: pointer;
     height: 100%;
 
     &::after {
       display: block;
-      width: calc(100% - 35px);
-      height: 41px;
+      width: calc(100% - 42px);
+      height: 42px;
       background-color: $primary_bg;
       border-radius: 0 12px 0 0;
       border-top: 4px solid;
@@ -45,16 +45,16 @@
 
     &::before {
       display: block;
-      width: 40px;
-      height: 41px;
+      width: 44px;
+      height: 42px;
       background-color: $primary_bg;
       border-left: 4px solid;
       border-color: inherit;
       content: "";
       position: absolute;
       top: 0;
-      left: 17px;
-      transform: skewX(-41deg);
+      left: 21px;
+      transform: skewX(-45deg);
     }
   }
 
