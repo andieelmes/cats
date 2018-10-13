@@ -11,9 +11,9 @@
   margin-bottom: 30px;
   overflow: hidden;
   position: relative;
-  height: 100%;
-  min-height: 100%;
   min-width: 320px;
+  display: flex;
+  flex-direction: column;
 
   &__input {
     top: 50%;
@@ -21,12 +21,20 @@
     transform: translate(-50%, -50%);
   }
 
+  &__wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+
   &__card {
-    display: block;
     margin-top: 42px;
     border-color: $primary;
     cursor: pointer;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 
     &::after {
       display: block;
@@ -72,6 +80,7 @@
     border-top: 0;
     border-radius: 0 0 12px 12px;
     background-color: $primary_bg;
+    flex-grow: 1;
   }
 
   &__image {
