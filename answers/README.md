@@ -80,7 +80,7 @@ _Какие ещё области знаний, кроме тех, что н
 
 Прохожу курсы Wes Bos, интенсивы HTML академии, делаю задания на learn.javascript.ru. 
 
-Слушаю тематические подкасты, например, ([Веб-стандарты](https://itunes.apple.com/ru/podcast/веб-стандарты/id1080500016?mt=2)) 
+Слушаю тематические подкасты, например, [Веб-стандарты](https://itunes.apple.com/ru/podcast/веб-стандарты/id1080500016?mt=2)
 
 Близко как JS-программирование, так и HTML/CSS.
 Изучаю иностранные языки (английский на уровне C1, немецкий начинающий). Увлекаюсь историей.
@@ -117,7 +117,9 @@ https://andieelmes.ru/blog/?go=all/acronis-15/
 - Шаблон интернет магазина Netcat
 
 https://andieelmes.ru/test/netcat_tpl/item.html
+
 https://andieelmes.ru/test/netcat_tpl/catalog.html
+
 https://andieelmes.ru/test/netcat_tpl/index.html
 
 Чтобы добиться наибольшей кастомизации шаблона, для адаптива использовали [CSS Element Queries](https://github.com/marcj/css-element-queries), то есть адаптив зависел не от ширины экрана, а от ширины элемента. Это позволит использовать один и тот же блок в разных сетках.
