@@ -8,7 +8,7 @@ products.forEach(function (el) {
   var card = el.querySelector('.js-product-card');
 
   input.addEventListener('change', function () {
-    if (input.checked) card.classList.add('mouseover');
+    card.classList.add('mouseover');
   });
 
   card.addEventListener('mouseleave', function () {

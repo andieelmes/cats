@@ -189,7 +189,7 @@
     border-bottom: 1px dashed $primary;
   }
 
-  &:hover {
+  & .product__wrapper:not(.mouseover):hover {
     .product {
       &__card {
         border-color: $primary_hover;
@@ -290,6 +290,18 @@
 
         &--disabled {
           display: block;
+        }
+      }
+    }
+
+    &:not(.mouseover):hover {
+      .product {
+        &__card {
+          border-color: $disabled;
+        }
+
+        &__label {
+          background-color: $disabled;
         }
       }
     }
